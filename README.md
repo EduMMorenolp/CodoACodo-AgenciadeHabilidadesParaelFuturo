@@ -1,5 +1,7 @@
 # Codo a Codo - Compartiendo el Aprendizaje
 
+<img src="https://aulasvirtuales.bue.edu.ar/pluginfile.php/1/theme_academiaba38/logo/1691244139/logo%20OK.png" alt="FotoCodoACodo" width="500">
+
 ¡Hola compañeros de Codo a Codo!
 
 Este es mi rincón de aprendizaje, un espacio donde comparto el contenido de los cursos que estamos tomando juntos. Aquí encontrarás apuntes, ejercicios, proyectos y recursos que creo que pueden ser útiles para todos nosotros mientras avanzamos en nuestros estudios.
