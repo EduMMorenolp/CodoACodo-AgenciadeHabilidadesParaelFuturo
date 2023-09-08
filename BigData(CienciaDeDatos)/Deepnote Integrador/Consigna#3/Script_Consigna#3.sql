@@ -119,13 +119,15 @@ ORDER BY c.country ASC, p.genre ASC;
 
 -- D. Mostrar las películas clasificadas como drama por netflix, que hayan ganado el Oscar entre 2010 y 2020 y que estén en esta plataforma
 
-SELECT c.title_content AS titulo_de_pelicula, c.type AS tipo_de_contenido, c.date_added AS fecha_agregada_a_Netflix
+SELECT DISTINCT c.title_content AS titulo_de_pelicula, c.type AS tipo_de_contenido, c.date_added AS fecha_agregada_a_Netflix
 FROM content AS c
 JOIN oscar AS o ON c.id_content = o.id_content
 WHERE c.type = 'Movie' 
   AND c.listed_in LIKE '%Drama%' 
   AND o.year_ceremony BETWEEN 2010 AND 2020 
-  AND c.date_added IS NOT NULL;
+  AND c.date_added IS NOT NULL
+  AND o.winner = 1
+  ORDER BY titulo_de_pelicula;
 
 -- E. Seleccionar el título y el género de las películas puntuadas por IMDB entre 7 y 9. Obtener los títulos en idioma inglés.
 
