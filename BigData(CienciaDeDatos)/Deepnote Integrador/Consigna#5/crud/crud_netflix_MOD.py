@@ -11,6 +11,8 @@ from tkinter import messagebox, ttk
 #   Configuración y grid etiquetas
 
 
+
+
 def config_label(mi_label, fila):
     espaciado_labels = {'column': 0, 'sticky': 'e', 'padx': 10, 'pady': 10}
     color_labels = {'bg': color_fondo, 'fg': color_letra}
@@ -330,7 +332,6 @@ def leer_general():
 
 # #   UPDATE
 
-
 def actualizar():
     # Crear una tupla con los datos
     datos = (
@@ -346,18 +347,16 @@ def actualizar():
 
     # Actualizar el registro en la BBDD
     try:
-        # Reemplaza 'id' con la columna que identifica de manera única a tus registros
-        query = "UPDATE content SET type=?, title_content=?, director=?, country=?, release_year=?, rating=?, duration=?, listed_in=? WHERE id=?"
+        query = "UPDATE content SET type=?, director=?, country=?, release_year=?, rating=?, duration=?, listed_in=? WHERE title_content=?"
         values = (
             type.get(),
-            title_content.get(),
             director.get(),
             country.get(),
             release_year.get(),
             rating.get(),
             duration.get(),
             listed_in.get(),
-            # Aquí deberías agregar el valor que identifica de manera única a tu registro (por ejemplo, el id)
+            title_content.get() 
         )
         cur.execute(query, values)
         conn.commit()
@@ -366,10 +365,11 @@ def actualizar():
     except sq3.Error as e:
         print(f'Error al actualizar el registro: {e}')
         messagebox.showerror('STATUS', 'Error al actualizar el registro.')
+
 # #   DELETE
 
 
-def borrar(id_value):
+def borrar():
     # Llamar a la función leer_campo
     resultado_query = leer_campo(
         title_content.get(), 'Título', 'title_content')
