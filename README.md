@@ -23,7 +23,7 @@ Este repositorio está destinado a ser un lugar centralizado para acceder a todo
 
 # Puedes Ayudar dandole una estrellita al REPOSITORIO
 
-#### Tu apoyo hace la diferencia. Si valoras los aportes a la comunidad que realizo y deseas contribuir a su continuidad, te invito a realizar una donación. Cada aporte, por pequeño que sea, ayuda a mantener este proyecto en marcha y a seguir brindando un servicio de calidad. ¡Gracias por tu generosidad y apoyo!
+#### Tu apoyo hace la diferencia. Si valoras los aportes a la comunidad que realizo y deseas contribuir a su continuidad, te invito a realizar una donación. Cada aporte, por pequeño que sea, ayuda a mantener este proyecto en marcha y a seguir brindando un servicio de calidad. ¡Gracias por tu generosidad y apoyo! Las donaciones son completamente voluntarias y se destinan a apoyar la continuidad y mejora de este proyecto Github en general. Hacer una donación no otorga derechos adicionales sobre la obra, la cual sigue siendo accesible bajo los términos de la licencia Creative Commons Atribución 2.5 Argentina.
 
 [![Puedes colaborar Clikeando en Donar](https://img.shields.io/badge/Clikeando%20aqui%20puedes%20colaborar%20-Donar-blue)](https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848810689e018813682e960130)
 
