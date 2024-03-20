@@ -1,0 +1,30 @@
+h2 {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+section h2 {
+   color: indigo;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* CLASS
+- Se puede repetir su uso
+- Se pueden combinar
+*/
+
+.destacado {
+   font-weight: bold;
+}
+.agrandarLetra {
+   font-size: 30px;
+}
+
+/* ID
+- NO Se puede repetir su uso 
+- NO Se pueden combinar
+*/
+
+#productoDestacado {
+   background-color: rgb(200, 249, 255);
+}
+
