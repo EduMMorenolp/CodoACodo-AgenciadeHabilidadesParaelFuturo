@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .container {
+         background-color: rgb(240, 227, 174);
+         width: 100%;
+         max-width: 400px;
+
+         /* Truco para centrar elementos en bloque (tener en cuenta de definir un ancho anteriormente) */
+         margin: auto;
+      }
+
+       /* Truco para centrar imágenes (y elementos inline) */
+      img {
+         display: block;
+         margin: auto;
+      }
+
+      h1 {
+         text-align: center;
+      }
+
+      /* Truco para centrar elementos inline */
+      label, input {
+         display: block;
+         margin: auto;
+         width: 200px;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="container">
+      <h1>Mi contenido</h1>
+      <img src="https://picsum.photos/100/100" alt="">
+      <form action="">
+         <label for="">Nombre</label>
+         <input type="text">
+
+      </form>
+   </div>
+
+</body>
+
+</html>
