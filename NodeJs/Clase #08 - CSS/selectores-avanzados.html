@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      /* selector hermano */
+      ul+p {
+         color: red;
+      }
+
+      /* hijo directo */
+      div#container>ul {
+         border: 1px solid black;
+      }
+
+      /* hermanos */
+      .hermanos h2~p {
+         color: blue;
+      }
+
+      /* Por atributo */
+      a[href^="https"] {
+         background-color: deepskyblue;
+      }
+
+      /* Si se chequea (checkbox y radio) */
+      input[type=checkbox]:checked {
+         /* propiedad que permite cambiar el color del checkbox */
+         accent-color: rgb(255, 162, 0);
+      }
+
+      /* Tooltip */
+      .tooltip {
+         background-color: #3b5998;
+         position: relative;
+         display: inline-block;
+         padding: 1em 3em;
+         color: white;
+         font-size: 1.2em;
+      }
+
+      .tooltip::after {
+         border-bottom: 15px solid #3b5998;
+         border-left: 15px solid transparent;
+         border-right: 15px solid transparent;
+         width: 0;
+         height: 0;
+         content: "";
+         display: block;
+         position: absolute;
+         bottom: 100%;
+         left: 1em;
+      }
+
+      /* nth-child */
+
+      .nthchild li:nth-child(3) {
+         color: rgb(243, 238, 238);
+         background-color: darksalmon;
+         padding: 5px;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- selector hermano -->
+   <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+   </ul>
+   <p>Párrafo 1</p>
+   <p>Párrafo 2</p>
+
+   <hr>
+
+   <!-- hijo directo  -->
+   <div id="container">
+      <ul>
+         <li> List Item
+            <ul>
+               <li> Child </li>
+            </ul>
+         </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+   </div>
+
+   <hr>
+
+   <!-- hermanos -->
+   <div class="hermanos">
+      <h2>Subtitulo</h2>
+      <p>párrafo 1</p>
+      <p>párrafo 2</p>
+      <p>párrafo 3</p>
+   </div>
+
+   <hr>
+
+   <!-- Por atributo -->
+   <a href="https://google.com.ar">Link externo</a>
+   <a href="index.html">Enlace normal</a>
+
+   <hr>
+
+   <!-- Form -->
+   <form>
+      <input type="checkbox"> Aceptar términos
+   </form>
+
+   <hr><br>
+
+   <!-- After -->
+   <div class="tooltip">
+      Probando tooltip
+   </div>
+
+   <hr>
+
+   <ul class="nthchild">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+   </ul>
+</body>
+
+</html>

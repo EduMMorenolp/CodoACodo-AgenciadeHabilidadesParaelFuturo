@@ -1,0 +1,60 @@
+.flex {
+   /* Crea estructura flexbox */
+   display: flex;
+}
+
+.align-center {
+   align-items: center;
+}
+
+/* Navegación */
+header nav {
+   /* TRUCO */
+   margin-left: auto;
+   margin-right: 20px;
+}
+header nav ul { 
+   /* quitar viñetas */
+   list-style:none;
+   gap:10px
+}
+header nav ul li {
+   /* margin-left: 10px */
+}
+
+#hero {
+   height: 120px;
+   /* Distribuir horizontalmente */
+   justify-content: center;
+   /* Distribuir verticalmente */
+   align-items: center;
+}
+
+/*
+#sobremi .flex div:nth-child(1) {width: 40%}
+#sobremi .flex div:nth-child(2) {width: 60%}
+*/
+.col50 {
+   flex-basis: 50%;
+   /* width: 50% */
+}
+.or-columna {
+   flex-direction: column;
+}
+#sobremi .flex .or-columna p {
+   flex-grow: 1;
+}
+#sobremi .flex .or-columna a {
+   align-self: flex-end;
+   padding: 10px;
+   background-color: blue;
+   color: white;
+   text-decoration: none;
+   font-size: 0.8rem;
+   font-family: Arial, Helvetica, sans-serif;
+   border-radius: 5px;
+}
+#sobremi .flex .or-columna a:hover {
+   background-color: white;
+   color: blue;
+}
