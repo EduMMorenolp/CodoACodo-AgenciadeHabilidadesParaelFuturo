@@ -1,0 +1,8 @@
+Instalación de GIT: https://youtu.be/ptXiQwE535s
+Comandos básicos para la terminal, moverse entre directorios: https://youtu.be/SIotISUq-3w
+Comandos básicos para la terminal, crear carpetas, archivos, eliminarlos: https://youtu.be/W-z0iTXEarw
+Inicializar carpeta y configurar usuarios: https://youtu.be/KAY1j-MPpyA
+Subir archivo a un repositorio local: https://youtu.be/NRaLP7vtoOY
+Subir archivos a GitHub: https://youtu.be/9p7Avpcs7Bk
+Clonar repositorios: https://youtu.be/AKp_q9hdJRI
+Cómo publicar un sitio web gratis con Github Pages: https://youtu.be/9p7Avpcs7Bk
