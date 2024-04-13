@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      /* Mobile FIRST */
+      section {
+         display: flex;
+
+         flex-wrap: wrap;
+
+      }
+
+      section div {
+         width: 100%;
+
+         border: dotted;
+      }
+
+      /* Tablet */
+      @media (min-width: 768px) {
+         section div {
+            width: 50%;
+         }
+      }
+
+      /* Tablet */
+      @media (min-width: 1200px) {
+         section div {
+            width: 25%;
+         }
+      }
+   </style>
+</head>
+
+<body>
+
+   <section>
+      <div>col 1</div>
+      <div>col 2</div>
+      <div>col 3</div>
+      <div>col 4</div>
+   </section>
+</body>
+
+</html>

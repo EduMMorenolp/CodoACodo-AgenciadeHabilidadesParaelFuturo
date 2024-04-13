@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      #grid {
+         display: grid;
+         grid-template-columns: 20% 1fr 15%;
+         grid-template-rows: 70px auto 80px ;
+
+         /* Utilizo los nombres de las areas para indicar que CELDAS deben ocupar */
+         grid-template-areas: 
+            "nav enc enc"
+            "nav seccion ads"
+            "nav pie pie"
+         ;
+         gap: 10px
+      }
+      header {
+         background-color: #f0e1a8;
+         grid-area: enc;
+      }
+      section {
+         background: #91c2d4;
+         /*xs Darle nombre al area */
+         grid-area: seccion;
+
+         padding: 10px;
+
+      }
+      nav {
+         background: #c492f3;
+          grid-area: nav;
+      }
+      aside {
+         background: #d884a1;
+          grid-area: ads;
+      }
+      footer {
+         background: #5f9857;
+          grid-area: pie;
+      }
+   </style>
+</head>
+<body>
+   
+   <div id="grid">
+      <header>Encabezado</header>
+      <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est harum perferendis rerum quis esse quo non voluptate nisi culpa voluptatum aliquam quasi, cum, dignissimos obcaecati? Accusamus et provident totam commodi eius cumque nisi architecto facilis asperiores, magni, reiciendis maiores quasi debitis? Inventore ut quibusdam eum neque animi soluta pariatur totam?</section>
+      <nav>Nav</nav>
+      <aside>Publicidad</aside>
+      <footer>Lorem40</footer>
+   </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Desktop first (reglas para compu) */
+        section {
+            display: flex;
+
+            /* Los hijos se hacen multilinea */
+            flex-wrap: wrap;
+        }
+
+        /* 4 columnas */
+        section div {
+            flex-basis: 25%;
+            background: rgb(255, 248, 166);
+        }
+
+        @media (max-width: 1024px) { 
+            /* Tablet */
+
+            /* 2 columnas */
+            section div {
+                flex-basis: 50%;
+            }
+        }
+        @media (max-width: 767px) {
+            /* Celular */
+
+            /* 1 columnas */
+            section div {
+                flex-basis: 100%;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>col 1</div>
+        <div>col 2</div>
+        <div>col 3</div>
+        <div>col 4</div>
+    </section>
+</body>
+
+</html>
