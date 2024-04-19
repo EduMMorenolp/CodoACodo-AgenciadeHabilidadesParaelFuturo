@@ -1,0 +1,6 @@
+console.log("hola mundo")
+alert("TIENES VIRUSSSSSS")
+let nombre = prompt("Tu nombre")
+console.log("Hola " + nombre)
+let confirmar = confirm("¿aceptas?")
+console.log(confirmar)
