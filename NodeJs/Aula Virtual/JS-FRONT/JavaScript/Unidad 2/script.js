@@ -6,7 +6,7 @@ curso Full Stack”
 
 function saludar(numero) {
     for (let i = 0; i < numero; ++i) {
-        console.log("Bienvenidos al curso Full Stack")
+        console.log("1.Bienvenidos al curso Full Stack")
     }
 }
 
@@ -19,9 +19,9 @@ calcule el máximo.
 
 function numeroMax(a, b) {
     if (a > b) {
-        console.log("el numero mas grande es : " + a)
+        console.log("2.el numero mas grande es : " + a)
     } else {
-        console.log("el numero mas grande es : " + b)
+        console.log("2.el numero mas grande es : " + b)
     }
 }
 numeroMax(3, 4)
@@ -33,7 +33,7 @@ parámetro tres valores y devuelva el promedio de los mismos.
 
 function promedio3(a, b, c) {
     let resultado = (a + b + c) / 3
-    console.log("Resultado promedio : " + resultado)
+    console.log("3.Resultado promedio : " + resultado)
 }
 promedio3(2, 6, 4)
 
@@ -63,7 +63,7 @@ function calcularPromedioNotas() {
 }
 
 const promedioNotas = calcularPromedioNotas();
-console.log("El promedio de las notas ingresadas es:", promedioNotas);
+console.log("4.a.El promedio de las notas ingresadas es:", promedioNotas);
 
 function siguiente(numero) {
     return numero + 1;
@@ -71,4 +71,46 @@ function siguiente(numero) {
 
 const numeroIngresado = 5;
 const siguienteNumero = siguiente(numeroIngresado);
-console.log("El siguiente número después de", numeroIngresado, "es:", siguienteNumero);
+console.log("4.b.El siguiente número después de", numeroIngresado, "es:", siguienteNumero);
+
+/*
+5.Una función que se llame doble, que reciba como parámetro un valor, y
+devuelva el doble del número ingresado como parámetro. 
+*/
+
+function doble(numero) {
+    return numero * 2
+}
+
+const numeroDoble = 5
+const dobleNumero = doble(numeroDoble)
+console.log("5.El doble de ", numeroDoble, " es : ",dobleNumero );
+
+/*
+6.Una función que se llame cuadrado, que reciba como parámetro un
+valor, y devuelva el valor del numero ingresado como parámetro
+elevado al cuadrado.
+*/
+
+function cuadrado(valor) {
+    return valor ** 2
+}
+
+const numeroCuadrado = 5
+const cuadradoNumero = cuadrado(numeroCuadrado)
+console.log("5.El cuadrado de ", numeroCuadrado, " es : ",cuadradoNumero );
+
+/*
+7.Una función que se denomine imprimirValores que dado un número
+por parámetro, imprima cual es el valor siguiente, el doble y el
+cuadrado. Usando las funciones definidas en los puntos 5) , 6) y 7) :
+siguiente, el doble y el cuadrado.
+*/
+
+function imprimirValores(numero) {
+    console.log("Siguiente : ", siguiente(numero))
+    console.log("Doble : ", doble(numero))
+    console.log("Cuadrado : ", cuadrado(numero))
+}
+
+imprimirValores(5)
