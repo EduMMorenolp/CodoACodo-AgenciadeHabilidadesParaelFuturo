@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cliente {
+            padding:10px;
+            font-family: Arial;
+        }
+        .error {
+            background: rgb(255, 152, 152);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cliente">
+
+    </div>
+    <span class="error">
+
+    </span>
+
+    <script>
+        const clientes = [
+            {
+                id: 1,
+                nombre: "José",
+                email: "jose@jose.com"
+            },
+            {
+                id: 2,
+                nombre: "Maria",
+                email: "maria@jose.com"
+            },
+            {
+                id: 3,
+                nombre: "Pepe",
+                email: "pepe@jose.com"
+            }
+        ];
+
+        const getCliente = id => {
+            return new Promise((resolve, reject) => {
+                let cliente = clientes.find(obj => obj.id === id)
+                if (cliente != undefined) {
+                    setTimeout(() => {
+                        resolve(cliente);
+                    }, 5000)
+                } else {
+                    setTimeout(() => {
+                        reject("No se ha encontrado al cliente");
+                    }, 5000)
+                }
+            })
+        }
+
+
+        getCliente(1)
+            .then(obj => {
+                let infoCliente = document.querySelector(".cliente")
+                infoCliente.innerHTML = `
+                    <h2>${obj.nombre}</h2>
+                    <a href="${obj.email}">Enviar e-mail</a>
+                `
+
+            }) // resolve
+            .catch(err => {
+                let mensajeError = document.querySelector(".error")
+                mensajeError.innerHTML = `
+                    <strong>${err}</strong>
+                    
+                `
+
+            }) // reject
+
+
+
+
+    </script>
+</body>
+
+</html>

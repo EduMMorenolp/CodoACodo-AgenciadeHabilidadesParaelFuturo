@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      p {
+         /* display: none; */
+         opacity: 0;
+         transition: all 1s;
+      }
+      .mostrar {
+         /* display: block; */
+         opacity: 1;
+      }
+
+      a {
+         padding: 10px;
+         border-radius: 10px;
+         background-color: chocolate;
+         color: white;
+         text-decoration: none;
+         font-family: sans-serif;
+         margin-top: 10px;
+         display: inline-block;
+      }
+   </style>
+</head>
+<body>
+   <a href="">Leer más</a>
+
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quaerat quisquam aspernatur provident sequi laborum magnam esse veritatis tempora optio!</p>
+
+   <script>
+         const boton = document.querySelector("a")
+
+         function ejemplo() {
+            console.log("Haciendo clic")
+         }
+
+         // Cuando se haga clic en el botón, debe aparecer o desaparecer el texto
+         boton.addEventListener("click", evento => {
+            evento.preventDefault()
+            if (evento.target.innerText == "Leer más") {
+               evento.target.innerText = "Leer menos"
+            } else {
+               evento.target.innerText = "Leer más"
+            }
+            
+
+            const parrafo = document.querySelector("p")
+            parrafo.classList.toggle("mostrar")
+         })
+   </script>
+</body>
+</html>
