@@ -1,0 +1,9 @@
+Instalar XAMPP y phpMyAdmin: https://drive.google.com/file/d/1fQbKUwVsTUekGm78C9z5EK31Zo_Gipse/view?usp=sharing
+
+Instalar XAMPP y MySQL Workbench: https://youtu.be/wFZtb5UYRjM
+
+Instalar MySQL y MySQL Workbench: https://drive.google.com/file/d/1IV4aMelWW8AVAEXEldfDbthd4gsg5bhB/view?usp=sharing
+
+Primer encuentro con una Base de Datos MySQL (MySQL Workbench): https://drive.google.com/file/d/1ihnslrUrACBh8Su-W26M_n80JNjkNVlH/view?usp=sharing
+
+Primer encuentro con una Base de Datos MySQL (XAMPP y phpMyAdmin): https://drive.google.com/file/d/1O-7HaalYp-VksMR_JDneIeyOFTr4RCWs/view?usp=sharing
