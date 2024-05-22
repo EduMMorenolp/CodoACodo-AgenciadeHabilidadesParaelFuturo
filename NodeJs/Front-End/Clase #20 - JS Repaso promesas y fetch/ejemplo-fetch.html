@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <div id="resultados">
+
+   </div>
+   <div id="error">
+
+   </div>
+
+   <script>
+      fetch("https://restcountries.com/v3.1/alpha?codes=ar")
+         .then(function (res) { return res.json() })
+         .then(function (data) {
+            const contenedor = document.querySelector("#resultados")
+            contenedor.innerHTML = `
+            <h1>${data[0].name.nativeName.spa.official} ${data[0].flag}</h1>
+            <strong>Población: ${data[0].population}</strong>
+         `
+         })
+         .catch(function (err) {
+            const contenedor = document.querySelector("#error")
+            contenedor.innerHTML = `
+            <strong>No se ha podido obtener los resultados</strong>
+         `
+
+         })
+
+
+   </script>
+</body>
+
+</html>
