@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>DESDE EL HTML</h1>
+   <div>
+
+   </div>
+   <script>
+      // JavaScript del lado del cliente
+      fetch("https://ws.smn.gob.ar/map_items/weather")
+      .then(respuesta => respuesta.json())
+      .then(data => {
+         const contenedor = document.querySelector("div")
+         contenedor.innerHTML = `<h2>${data[0].province}</h2>`
+      })
+   </script>
+</body>
+</html>
